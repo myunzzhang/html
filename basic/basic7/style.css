@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.father .goodboy {
+    clear: both;
+}
+
+.father {
+    width: 1000px;
+    background-color: lightcyan;
+    border: 1px solid blue;
+    /* padding: 상 우 하 좌; */
+    padding: 10px 20px 30px 40px;
+    /* padding: 상 좌우 하; */
+    padding: 10px 20px 30px;
+    /* padding: 상하 좌우; */
+    padding: 10px 20px;
+    /* padding: 상하좌우; */
+    padding: 20px;
+
+    /* 똑같은 명령이 반복되었을 때는 아래쪽이 힘이 쌤
+        ----> 아래쪽 명령 적용 */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px auto 0;
+}
+
+.fewater.father .child {
+    background-color: cornflowerblue;
+    width: 32%;
+    height: 100px;
+    float: left;
+    margin-right: 2%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.fewater.father .child3 {
+    margin-right: 0;
+}
+
+.sevensu .child {
+    background-color: cadetblue;
+    width: 23.5%;
+    height: 100px;
+    float: left;
+    margin-right: 2%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.sevensu .child4 {
+    margin-right: 0;
+}
+
+.sevensu .child2 {
+    overflow: hidden;
+}
+
+.sevensu .child2 video {
+    width: 100%;
+}
+
+.sevensu .child4 {
+    overflow: hidden;
+}
+
+.sevensu .child4 object {
+    width: 100%;
+}
+
+.sevensu .child3 img {
+    width: 100%;
+}
+
+.sevensu .child3 {
+    overflow: hidden;
+}

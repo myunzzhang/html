@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>input</title>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <div class="box1">
+        <form action="#">
+            <label for="name">name</label>
+            <!-- name="my-name" : 로그인할때 타고 들어가는 값을 부르는 이름 -->
+            <!-- id="name" : label의 이름을 불러야함. -->
+            <input type="text" id="name" name="my-name">
+            <br><br>
+            <label for="age">age</label>
+            <input type="number" id="age" name="my-age"> 
+            <br><br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </div> <!-- //box1 -->
+    <div class="box2">
+        <form action="#">
+            <fieldset>
+                <legend>leader</legend>
+                <label for="name1">name</label>
+                <input type="text" id="name1" name="name-1"> 
+                <label for="age1">age</label>
+                <input type="number" id="age1" name="age-1">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>a vice president</legend>
+                <label for="name2">name</label>
+                <input type="text" id="name2" name="name-2">
+                <label for="age2">age</label>
+                <input type="number" id="age2" name="age-2">
+            </fieldset>
+        </form>
+    </div> <!-- //box -->
+    <div class="box3">
+        <form action="#">
+            <label for="txt">text</label>
+            <input type="text" id="text" placeholder="no more than 5" maxlength="5">
+            <br><br>
+            <label for="pwd">password</label>
+            <input type="password" id="pwd" placeholder="more than 4" minlength="4" required>
+            <br><br>
+            <label for="src">search</label>
+            <input type="search" id="src">
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div> <!-- //box3 -->
+    <div class="box4">
+        <form action="#">
+            <label for="num">number</label>
+            <input type="number" id="num" min="0" max="10">
+            <label for="rg">range</label>
+            <input type="range" min="0" max="100" step="20" id="rg">
+            <label for="dt">date</label>
+            <input type="date" id="dt" min="2020-01-01" max="2030-12-31">
+        </form>
+    </div> <!-- //box4 -->
+    <div class="box5">
+        <h3 style="padding-bottom: 10px;">memo</h3>
+        <label for="mg">Please enter a message</label>
+        <br>
+        <textarea name="msg" id="mg" cols="50" rows="10"></textarea>
+    </div> <!-- //box5 -->
+    <div class="box6">
+        <h3>select, option tag</h3>
+        <form action="#">
+            <label for="lang">language</label>
+            <select name="lang" id="lang">
+                <option value="">--choice language--</option>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+                <option value="react">react</option>
+            </select>
+            <br><br>
+            <h3>optgroup tag</h3>
+            <label for="shopping">shopping lest</label>
+            <select name="shopping" id="shopping">
+                <optgroup label="fruit">
+                    <option value="f_apl">apple</option>
+                    <option value="f_grp">grape</option>
+                    <option value="f_org">orange</option>
+                </optgroup>
+                <optgroup label="vagetable">
+                    <option value="v_crt">carrot</option>
+                    <option value="v_tmt">tomato</option>
+                    <option value="v_ept">eggplant</option>
+                </optgroup>
+                <optgroup label="meat">
+                    <option value="m_bef">beef</option>
+                    <option value="m_pork">pork</option>
+                    <option value="m_ckn">chicken</option>
+
+                </optgroup>
+            </select>
+        </form>
+    </div> <!-- //box6 -->
+    <div class="box7">
+        <form action="#">
+            <fieldset>
+                <legend>gender</legend>
+                <input type="radio" name="gender"> male
+                <input type="radio" name="gender" checked> female
+            </fieldset>
+            <fieldset>
+                <legend>citiy</legend>
+                <input type="radio" name="area">seoul
+                <input type="radio" name="area">busan
+                <input type="radio" name="area">daegu
+                <input type="radio" name="area" checked>kimhae
+            </fieldset>
+            <fieldset>
+                <legend> Choose all the fruits you like</legend>
+                <input type="checkbox" name="fruit">apple
+                <input type="checkbox" name="fruit">pear
+                <input type="checkbox" name="fruit" checked>watermalon
+                <input type="checkbox" name="fruit">strawberry
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

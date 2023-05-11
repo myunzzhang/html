@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.clear::after{content: ""; clear: both; display: block;}
+
+.warp{
+    /* warp의 넓이는 부모인 body를 따르고 
+    warp의 높이는 자식인 khj를 따른다. */
+    border: 5px solid lightpink;
+    padding: 20px;
+    
+}
+.khj{
+    /* khj의 넓이는 부모인 warp을 따르고
+    khj의 높이는 자식인 텍스트 (khj)의 높이가 자신의 높이가 된다. */
+    border: 5px solid lightblue;
+}
+
+.kgy{
+    border: 5px solid lightseagreen;
+    width: 300px;
+    margin: 0 auto; /* // 상하 좌우 */
+}
+
+.kms{
+    margin-top: 30px;
+    border: 5px solid lightsalmon;
+}
+
+.kms .kc{
+    background-color: lightgoldenrodyellow;
+    width: 33.3333%;
+    float: left;
+}
+
+.kms .pill{clear: both;}
+
+.four{border: 5px solid lightcoral;}
+
+.four .bebe{
+    background-color: lightsteelblue;
+    width: 50%;
+    float: left;
+}
+

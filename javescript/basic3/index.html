@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var min=5;
+        min++; //하나더하기
+        document.write(min + '<br>')  //6
+        
+        min=min+2;
+        document.write(min +'<br>') //8
+
+        min +=4; //min+4; 
+        document.write(min +'<br>') //12
+
+        var fe = 5;
+        fe = fe + 4;
+        document.write(fe + '<br>') //9
+
+        var fm = 7;
+        fm+= 3 //fe=fe+3
+        document.write(fm + '<br>') //10
+
+        var sic = 9;
+        //sic에게 9를 더해서 다시 sic에게 넣어라
+        sic+=9;
+        document.write(sic + '<br>') //18
+
+        var one = 9;
+        one -=3; //one-3
+        document.write(one + '<br>')
+
+        var two = 8;
+        two--; //1빼기
+        document.write(two + '<br>')
+    </script>
+
+    <script>
+        //var, let, const 키워드 (변수만들떄 키워드)
+
+        var three = 3;
+        document.write(three + '<br>') //3
+        three = 4;
+        document.write(three + '<br>') //3
+        var three = 30;
+        document.write(three + '<br>') //30
+
+        // var는 두개가 만들어지지만 let은 오류가 뜬다! 그래서 var는 옛날꺼 오류 잡아주는 let이 최신
+        let four = 5;
+        // let four = 6; //four가 이미 정의 되어 있다는 에러 발생
+        four = 25; //다른 수를 할당해서 변수의 데이터를 변경하는 기능은 가능
+        document.write(four + '<br>')
+
+        //let은 값을 안넣어도 괜춘 그러나 const는 값을 넣어줘야함... 아님 난리남... 상수임... 정상수..?
+        let six;
+        const five = 3.14; //슬라이드처럼 변하는 값을 주는 데는 const못씀 //변수를 선언하자마자 값을 할당해야함
+        //five = 5; //const는 상수기 때문에 다른 값을 할당 할 수 없음 오류뜸 
+        document.write(five + '<br>')
+        // *const(constant상수)키워드로 선언하는 변수는 데이터를 변경할 수 없어서 변수라고 부르지 않고 상수라고 부름(변하지 않는 값)라고 부른다.
+        // var, let은 변수선언 const 상수선언
+
+        /* document.write(coke)
+        var coke = 30; -> undefined  coke가 누군지는 알지만 아직 document.write 되지 않았어 */
+
+        document.write(coke)
+        var coke = 30;
+
+        document.write(soda)
+        let soda =50;
+
+        document.write(fanta)
+        const fanta=60;
+        
+    </script>
+    
+</body>
+</html>

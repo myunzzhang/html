@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.one{
+    /* one의 공간 : width + padding + border
+    margin은 one의 공간 밖의 영역 */
+    border: 2px solid blue;
+    width: 200px;
+    padding: 20px;       /* 나의안쪽공간 */ 
+    margin: 20px auto;    /* 나의밖공간 */
+    box-sizing: border-box;
+    /* 넓이에 padding과 border를 포함시킴 */
+    text-align: center;
+}
+
+.two{
+    border: 1px solid hotpink;
+    padding: 20px;
+    margin: 30px;
+}
+
+.three{
+    border: 1px solid yellow;
+    
+}

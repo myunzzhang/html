@@ -1,0 +1,1 @@
+ document.write("배고프지만 저녁 못먹음")

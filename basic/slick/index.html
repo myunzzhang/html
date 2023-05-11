@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick을 연습해보자</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="warp clear">
+        <div class="banner">
+            <div class="your-class">
+                <div>
+                    <img src="https://img.megabox.co.kr/SharedImg/asis/system/mop/still/2017/CA/5C4B2D-AD01-4853-9A17-DF3608F10F89.large.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://img.megabox.co.kr/SharedImg/asis/system/mop/still/2017/B9/74B32E-476F-4069-980E-08D7AD2765A2.large.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://img.megabox.co.kr/SharedImg/asis/system/mop/still/2017/3E/B467A2-FAA5-4CE5-BF83-EC1C2E9EE473.large.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                autoplay:true
+            });
+        });
+    </script>
+</body>
+
+</html>

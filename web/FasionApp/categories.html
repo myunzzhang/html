@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/menu_Icon_left.svg" alt="menu_icon" class="menu_icon_left">
+        <h2>Shop Categories </h2>
+        <img src="images/menu_Icon_right.svg" alt="menu_icon_right" class="menu_icon_right">
+    </header>
+
+    <div class="category_slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/caterory_slide_01.jpg" alt="slide01">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/caterory_slide_02.jpg" alt="slide02">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/caterory_slide_03.jpg" alt="slide03">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/caterory_slide_04.jpg" alt="slide04">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <ul class="category_list container clearfix">
+        <li>
+            <img src="images/category_product_01.jpg" alt="T-shirts">
+            <h3>T-shirts</h3>
+            <h4>2.5k styles</h4>
+        </li>
+        <li>
+            <img src="images/category_product_02.jpg" alt="Shoes">
+            <h3>Shoes</h3>
+            <h4>1.5k styles</h4>
+        </li>
+        <li>
+            <img src="images/category_product_03.jpg" alt="Shoes">
+            <h3>Shoes</h3>
+            <h4>1.5k styles</h4>
+        </li>
+        <li>
+            <img src="images/category_product_04.jpg" alt="Shoes">
+            <h3>Shoes</h3>
+            <h4>1.5k styles</h4>
+        </li>
+    </ul>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.category_slide', {
+            loop: true,
+            
+
+            // If we need pagination
+            pagination: {
+                el: '.category_slide .swiper-pagination',
+                clickable:true,
+            },
+
+        });
+    </script>
+</body>
+
+</html>

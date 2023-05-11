@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 대입연산자
+        let choal = 10;
+        let yong = 3;
+
+        choal +=5; //choal = choal+5;
+        console.log(choal)
+
+        yong-=2; //yong = yong - 2 ;
+        console.log(yong)
+
+        let su = 20;
+        su *= 2; // su = su*2;
+        console.log(su)
+
+        let min = 9;
+        min /=2; //min = min/2; 몫을 구한다 //4.5
+        console.log(min)
+
+        let man = 9;
+        man %= 2 //man = man %2; 나머지를 구한다 //1
+        console.log(man)
+
+        let sok = 10;
+        sok **=2; //sok = sok의 2승//100
+        console.log(sok)
+    </script>
+
+    <script>
+        // 비교연산자☠
+        let gu = 9;
+        let pal =8;
+        /* == x==y x와y가 같으면 true */ 
+        console.log(gu==pal) //false
+        /* != x!=y x와y가 다르면 true */ 
+        console.log(gu!=pal) //true
+        /* < x<y x가 y보다 작으면 true */
+        console.log(gu<pal) //false
+        /* > x>y x가 y보다 크면 true */
+        console.log(gu>pal) //true
+        /* <= x<=y x가 y보다 작거나 같으면 true */
+        console.log(gu<=pal) //false
+        /* <= x<=y x가 y보다 크거나 같으면 true */
+        console.log(gu>=pal) //true
+
+        let four =4;
+        let nail ="4";
+        //==은 숫자와 문자가 다르다는 것을 인식하지 못함
+        console.log(four == nail) //ture
+        console.log(four != nail) //다른가? 다르면 true //false
+        //=== 자료형까지 구별한다 숫자와 문자가 다르다는 것을 인식함
+        console.log(four === nail) //false
+        console.log(four !== nail) //true
+
+        //논리연산자
+        // &&(AND연산자):A와 B가 모두 True이면 true
+        /* true && ture -> true
+        true && false -> false
+        false && true -> false */
+
+        true && console.log("논리연산자 and")
+
+    </script>
+</body>
+</html>

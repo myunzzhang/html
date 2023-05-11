@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singleproduct</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/menu_Icon_left.svg" alt="menu_icon" class="menu_icon_left">
+        <h2>Product Details</h2>
+        <img src="images/menu_Icon_right.svg" alt="menu_icon_right" class="menu_icon_right">
+    </header>
+    <div class="container top">
+        <div class="info">
+            <h2>Modern T_shirt for Women</h2>
+            <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slider">
+        <div class="slick1 clearfix">
+            <div>
+                <img src="images/product_detail_01.jpg" alt="이미지1">
+            </div>
+            <div>
+                <img src="images/product_detail_02.jpg" alt="이미지2">
+            </div>
+            <div>
+                <img src="images/product_detail_01.jpg" alt="이미지1">
+            </div>
+            <div>
+                <img src="images/product_detail_02.jpg" alt="이미지2">
+            </div>
+        </div>   
+    </div>
+
+    <div class="text">
+        <h3>$21.99</h3>
+        <h4>Look stunning with this modern t-shirt. it’s comfortable and attractive</h4>
+    </div>
+
+    <div class="text2">
+            <div class="colors"><a href="#">color</a><i class="fas fa-chevron-down"></i></div>
+            <div class="sizes"><a href="#">size</a><i class="fas fa-chevron-down"></i></div>
+    </div>
+
+    <div class="add-cart">
+        <p class="sp_link">
+            <a href="shoppingcart.html" class="btn">Add To Cart</a>
+        </p>
+    </div>
+
+   
+ 
+
+    <!-- SLICK -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick1').slick({
+                slidesToShow: 1.2,
+                centerPadding: "10px",
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+
+</html>

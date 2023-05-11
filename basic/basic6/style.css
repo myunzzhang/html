@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 넓이는 부모의 넓이를 따라간다
+높이는 자식의 높이를 따라간다 */
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.both {
+    background-color: #EEEEEE;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.both .child1 {
+    width: 25%;
+    background-color: #D9D7F1;
+    float: left;
+    text-align: center;
+}
+
+.both .child2 {
+    width: 25%;
+    background-color: #FFFDDE;
+    float: left;
+    text-align: center;
+}
+
+.both .child3 {
+    width: 25%;
+    background-color: #E7FBBE;
+    float: left;
+    text-align: center;
+}
+
+.both .child4 {
+    width: 25%;
+    background-color: #FFCBCB;
+    float: left;
+    text-align: center;
+}
+
+.both .lost {
+    background-color: #FBF6F0;
+    clear: left;
+}
+
+.abc {
+    background-color: #B4E4FF;
+    padding: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.abc .baby {
+    width: 32%;
+    background-color: #DFFFD8;
+    float: left;
+    margin-right: 2%;
+}
+
+.abc .sad{
+    clear: both;
+}
+
+.abc .baby3{
+    margin-right: 0;
+}

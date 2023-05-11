@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="animation"></div>
+    <div class="btn">
+        <a href="#">running</a>
+        <a href="#">paused</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $('.btn a').click(function(){
+          var $text = $(this).text();//클릭한 요소의 텍스트를 추출
+          console.log($text);
+          $('#animation').removeClass().addClass($text)
+      });  
+    </script>
+</body>
+</html>

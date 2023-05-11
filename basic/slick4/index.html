@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slider">
+        <div class="figma">
+            <div>
+                <img src="img/zzhang.jpg" alt="짱구1">
+            </div>
+            <div>
+                <img src="img/zzhang2.jpg" alt="짱구2">
+            </div>
+            <div>
+                <img src="img/zzhang.jpg" alt="짱구1">
+            </div>
+            <div>
+                <img src="img/zzhang2.jpg" alt="짱구2">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.figma').slick({
+              slidesToShow: 1.2,
+              arrows: false,
+              dots: true,
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+.clear::after{content: ""; clear: both; display: block;}
+
+.father{
+    width: 1000px;
+    background-color: lightyellow;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 30px auto;
+}
+
+.one>div{
+    width: 32%;
+    height: 150px;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    margin-right: 2%;
+}
+
+.one>div:last-child{margin-right: 0;}
+
+.one .child1{
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000077/77998/77998123524_727.jpg);
+    background-size: cover;
+    position: relative;
+    /* 기준이 되는 포지션 : ralative, absolute, fixed */
+}
+
+.one .child1 .cover{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.one .child1 .cover:hover{
+    opacity: 1;
+}
+
+.one .child2{
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000078/78076/78076124940_727.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.one .child2 .cover{
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    transform: translateX(-50%);
+    line-height: 50px;
+    background-color:rgba(0,0,0, 0.5);
+    transition: 0.3s;
+}
+
+.one .child2:hover .cover{
+    bottom:0;
+}
+
+.one .child3{
+    position: relative;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000081/81904/81904167949_727.jpg);
+    background-size: cover;
+}
+.one .child3 .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    line-height: 1.3;
+    border: 1px solid red;
+}
+
+.one .child3 .cover .title{
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+}
+
+.one .child3 .cover video{
+    width: 100%;
+}

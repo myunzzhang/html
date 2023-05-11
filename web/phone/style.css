@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{margin: 0; top: 0;}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body{
+    background-color: #010000;
+    padding: 5vw;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.index,
+.categories,
+.shop{
+    flex-shrink: 0;
+    float: left;
+    width: 30%;
+    margin: 0 1%;
+    width: 370px;
+    height: 755px;
+    position: relative;
+}
+
+.index img,
+.categories img,
+.shop img{
+    z-index: 5;
+    pointer-events: none;
+}
+
+.index img,
+.index .site,
+.categories img,
+.categories .site2,
+.shop img,
+.shop .site3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.index .site,
+.categories .site2,
+.shop .site3{
+    left: 25px;
+    width: calc(100% - 34px);
+    height: calc(100% - 30px);
+    top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.index .site object,
+.categories .site2 object,
+.shop .site3 object
+{
+    width: 100%;
+    height: 100%;
+}
+
+.categories .site2,
+.shop .site3{
+    top: 90px;
+    height: calc(100% - 113px);
+    border-radius: 10px;
+}

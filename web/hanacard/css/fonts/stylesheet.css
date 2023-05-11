@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Hana2.0 H';
+    src: url('Hana2-H.eot');
+    src: url('Hana2-H.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-H.woff2') format('woff2'),
+        url('Hana2-H.woff') format('woff'),
+        url('Hana2-H.ttf') format('truetype'),
+        url('Hana2-H.svg#Hana2-H') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hana2.0 CM';
+    src: url('Hana2-CM.eot');
+    src: url('Hana2-CM.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-CM.woff2') format('woff2'),
+        url('Hana2-CM.woff') format('woff'),
+        url('Hana2-CM.ttf') format('truetype'),
+        url('Hana2-CM.svg#Hana2-CM') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hana2.0 L';
+    src: url('Hana2-L.eot');
+    src: url('Hana2-L.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-L.woff2') format('woff2'),
+        url('Hana2-L.woff') format('woff'),
+        url('Hana2-L.ttf') format('truetype'),
+        url('Hana2-L.svg#Hana2-L') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hana2.0 M';
+    src: url('Hana2-M.eot');
+    src: url('Hana2-M.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-M.woff2') format('woff2'),
+        url('Hana2-M.woff') format('woff'),
+        url('Hana2-M.ttf') format('truetype'),
+        url('Hana2-M.svg#Hana2-M') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hana2.0 R';
+    src: url('Hana2-R.eot');
+    src: url('Hana2-R.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-R.woff2') format('woff2'),
+        url('Hana2-R.woff') format('woff'),
+        url('Hana2-R.ttf') format('truetype'),
+        url('Hana2-R.svg#Hana2-R') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hana2.0 B';
+    src: url('Hana2-B.eot');
+    src: url('Hana2-B.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-B.woff2') format('woff2'),
+        url('Hana2-B.woff') format('woff'),
+        url('Hana2-B.ttf') format('truetype'),
+        url('Hana2-B.svg#Hana2-B') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

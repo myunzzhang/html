@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; /* font-size의 기본값은 16px  */ font-size: 14px;}
+
+.clearfix::after{content: ""; clear: both; display: block;}
+
+/* reset */
+li{
+    /* 블릿문자삭제 */
+    list-style: none;
+}
+
+a{
+    /* a태그가 가진 색상과 밑줄을 삭제 */
+    color: #333; 
+    text-decoration: none;}
+
+/* /wrap/ */
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+#header{}
+
+#header h1{
+    float: left;
+}
+
+#header .nav{
+    margin-top: 20px;
+    float: right;
+}
+
+#header .nav ul{}
+
+#header .nav ul li{
+    position: relative;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+#header .nav ul li a{
+    background-color: #ccc;
+    display: block;
+    padding: 20px 15px;
+    transition: 0.3s;
+}
+
+#header .nav ul li a:hover{
+    background-color: #ddd;
+}
+
+#header .nav ul li .subMenu{
+    display: none; /* 반대 display : block */
+    /* non/block은 애니메이션이 안됨
+    opacity는 애니메이션이 됨 */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 1;
+}
+
+#banner{
+    height: 378px;
+    overflow: hidden;
+}
+
+#banner .slideList{
+    position: relative;
+}
+
+#banner .slideList .slideImg{
+    position: relative;
+}
+
+#banner .slideList .slideImg h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #ddd;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+#banner .slideList .slideImg img{
+    width: 100%;
+
+    /* img태그 특징
+    인라인 요소 --> 예측하지 못하는 공간을 가지고 있기 때문
+    해결방법 2가지 
+    1. display: block;
+    2. vertical-align: top;*/
+    display: block; 
+
+}
+
+/* content */
+
+#content1{
+    margin-top: 15px;
+}
+
+
+#content1 .notice{
+    position: relative;
+    float: left;
+    width : 49%;
+    height: 218px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+
+#content1 .notice ul{
+    
+}
+
+#content1 .notice ul li.active a{
+    color: #000;
+}
+
+#content1 .notice ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+#content1 .notice ul li a{
+    font-size: 24px;
+    color: #999;
+    font-weight: bold; /* 폰트의 두께 */
+}
+
+#content1 .notice ul li ul{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+}
+#content1 .notice ul li ul li{
+    width: 95%;
+}
+
+#content1 .notice ul li ul li a{
+    font-size: 16px;
+    float: left;
+    width: 68%;
+    /* 말줄임말 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* //말줄임말 */
+    font-weight: normal;
+}
+#content1 .notice ul li ul li span{
+    float: right;
+}
+
+
+#content1 .ad{
+    background-color: #ccc;
+    float: right;
+    width : 49%;
+    height: 218px;
+        
+}
+
+#content1 .ad a{}
+
+#content1 .ad a img{
+    width: 100%;
+}
+
+#content2{
+    margin-top: 15px;
+}
+
+#content2 h2{
+    margin-bottom: 10px;
+}
+
+#content2 ul{}
+#content2 ul li{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+}
+
+#content2 ul li:last-child{
+    margin-right: 0;
+}
+
+#content2 ul li div{
+    overflow: hidden;
+}
+
+#content2 ul li div img{
+    width: 100%;
+    transition: 0.3s;
+}
+
+#content2 ul li div:hover img{
+    /* transform: scale(1); ---> 100% */
+    transform: scale(1.2);
+}
+
+#content2 ul li span{}
+
+#footer{
+    border-top: 1px solid #ccc ;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+#footer address{
+    /* address태그는 태생적으로 기울림(italic)---> 일반(font-style: nlmal;) */
+    font-style: normal;
+}
+#footer address ul{
+    width: 673px;
+}
+
+#footer address ul li{
+    display: inline;
+
+   /*  display
+    1) display : none
+    2) display : block
+    3) display : inline --> 공간을 인식못함. padding, margin의 상하가 적용안됨
+    3) display : inline-block --> 인라인요소이나 블럭요소처럼 공간을 인식함 */
+
+    position: relative;
+    padding: 0 15px 0 10px;
+}
+
+#footer address ul li::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 1px;
+    height: 13px;
+    background-color: #666;
+}
+
+#footer address ul li.left{
+    padding-left: 0;
+}
+
+#footer address p{
+    padding-top: 30px;
+    text-transform: uppercase;
+    /* padding-left: 10px; */
+}
+
+
+
+
+/* 팝업 */
+.layer-bg{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+/*     width: 100%;
+    height: 100%; */
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.layer-bg .layer{
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+
+}
+.layer-bg .layer h2{
+    font-size: 35px;
+}
+.layer-bg .layer .close{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
